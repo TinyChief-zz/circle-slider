@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 350px;
+      position: relative;
+      background-color: #261132;
+    }
+    span {
+      color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      font-size: 26px;
+      font-family: 'Open Sans';
+      user-select: none;
+    }
+    .numbers {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      left: 250px;
+      top: 250px;
+      transform: translate(-50%, -50%)
+    }
+    .left {
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%)
+    }
+    .top {
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%)
+    }
+    .right {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+    .center {
+      color: white;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 70px;
+      font-weight: 500;
+    }
+    .center::after {
+      content: '°';
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="numbers">
+      <span class="left">10</span>
+      <span class="top">25</span>
+      <span class="right">40</span>
+      <span class="center">25</span>
+    </div>
+    <canvas></canvas>
+  </div>
+  <script src="/app.53be4488.js"></script>
+</body>
+
+</html>
